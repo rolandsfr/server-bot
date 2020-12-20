@@ -9,6 +9,8 @@
   "author": "Rolands Fridemanis",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.4.1"
+    "discord.js": "^12.4.1",
+    "dotenv": "^8.2.0",
+    "luxon": "^1.25.0"
   }
 }
