@@ -4,7 +4,9 @@ module.exports = {
     async execute(msg, args, Discord, bot) {
 
     	let category = msg.guild.channels.cache.find(cat => cat.id === "778997646475526156");
-    	let canCreateChannel = true;
+		let canCreateChannel = true;
+		
+		if(!args[0]) return msg.reply("Please, specify code of the Among Us room.");
 
     	category.children.each(channel => {
 	    	if(channel.name.toLowerCase() == `${args[0]} by ${msg.author.tag}`.toLowerCase()) {

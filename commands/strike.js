@@ -7,6 +7,8 @@ module.exports = {
 	description: "creates striking channel",
 	async execute(msg, args, Discord, bot) {
 
+		if(!args[0]) return msg.reply("Please, either use ``vouch``, ``close`` or tag a member to use a certain functionality of this command. Refer to #bot-info for more details.")
+
     	let category = msg.guild.channels.cache.find(cat => cat.id === "780464888073289740");
     	// If the command argument is "close" then check the channel and close it
 

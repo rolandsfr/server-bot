@@ -31,7 +31,7 @@ module.exports = {
                     msg.channel.send(`**${userTag}** now has ${strikedUserObj.currentStrikes}/3 strikes!`)
                 }
             } else {
-                return msg.reply("Please, specify a member you want to forcestrike.")
+                return msg.reply("Please, specify a member from who you want to remove a strike.")
             }
         } else {
             return msg.reply("You must have moderator permissions to use this command.")
